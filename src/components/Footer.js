@@ -3,7 +3,9 @@ import React from 'react'
 export const Footer = () => {
     return (
         <div>
-            footer
+            <div class="container">
+                Footer
+            </div>
         </div>
     )
 }

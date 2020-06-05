@@ -1,28 +1,47 @@
 import React from 'react';
 import { Header } from '../components/Header';
-import { Card } from '../components/Card';
+import { Footer } from '../components/Footer';
+import { Row, Col, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import CoverMobo from '../img/CoverMobo.jpeg';
+
 
 export const Home = () => {
     return (
+      <>
         <div className="App">
 
-       <Header/>
+          <Header/>
 
-      <header className="App-header">
-        <h1>Myrthe van Eijk</h1>
-        <div>
-          <button className="btn btn-danger">Portfolio</button>
-          <button className="btn btn-warning">About me</button>
+          <header className="App-header">
+            <h1>Myrthe van Eijk</h1>
+            <div>
+              <a href="#portfolio" title="portfolio"><button className="btn btn-dark">Portfolio</button></a>
+              <a href="/about" title="about me"><button className="btn btn-success">About me</button></a>
+            </div>
+          </header>
+
+          <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Projecten waaraan ik gewerkt heb...</p>
+            <div className="container">
+                <Row>
+                  <Col>
+                    <Card>
+                      <CardImg top width="100%" src={ CoverMobo } alt="Card image cap" />
+                      <CardBody>
+                        <CardTitle>Card title</CardTitle>
+                        <CardSubtitle>Card subtitle</CardSubtitle>
+                        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                        <Button>Button</Button>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                </Row>
+              </div>
+          </section>
+
+          <Footer />
         </div>
-      </header>
-
-      <section>
-          <h2>Portfolio</h2>
-          <p>Projecten waaraan ik gewerkt heb...</p>
-          <div className="container">
-            <Card/>
-          </div>
-      </section>
-    </div>
+      </>
     )
 }

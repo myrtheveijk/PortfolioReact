@@ -27,8 +27,15 @@
   color: #362A7F;
 }
 
+.header-page {
+  margin-top: 40px !important;
+  background: #ffffff !important;
+  min-height: 40vh !important;
+  color: rgb(42, 128, 103) !important;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #362A7F;
 }
 
 @keyframes App-logo-spin {
@@ -112,6 +119,7 @@ h3 {
   background: #362A7F;
   width: 100vw;
   padding: 20px;
+  text-align: center;
 }
 
 .btn-footer {
@@ -124,3 +132,23 @@ h3 {
   color: #C2C0D8;
 }
 
+.col-about {
+  margin: 20px;
+  padding: 0 40px 80px;
+}
+
+.btn-link {
+  color: #362A7F !important;
+  text-decoration: underline !important;
+}
+
+.btn-link:hover {
+  color: #C2C0D8 !important;
+}
+
+#pf-img {
+  max-width: 100% !important;
+  padding: 20px;
+
+  display: block;
+}

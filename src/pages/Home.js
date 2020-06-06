@@ -1,9 +1,6 @@
 import React from 'react';
-import { Row } from 'reactstrap';
-import { Button } from 'reactstrap';
+import { Row, Button } from 'reactstrap';
 import { ProjectCard } from '../components/ProjectCard';
-
-
 
 export const Home = () => {
     return (

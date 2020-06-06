@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -22,7 +24,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(1px + 2vmin);
-  color: rgb(28, 155, 96);
+  color: #362A7F;
 }
 
 .App-link {
@@ -37,3 +39,88 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-header {
+  background: rgb(42, 128, 103) !important;
+  border: none !important;
+  margin: 10px;
+}
+
+.btn-header:hover {
+  color: #362A7F !important;
+  background: #C2C0D8 !important;
+}
+
+#btn-about {
+  background: transparent !important;
+  color: rgb(42, 128, 103);
+  border-bottom: 2px solid rgb(42, 128, 103) !important;
+  border-radius: 0;
+  font-weight: 700;
+  padding: 6px 0;
+}
+
+#portfolio {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 4em !important;
+}
+
+h2 {
+  color: #362A7F;
+  font-weight: 700 !important;
+}
+
+h3 {
+  font-weight: 400 !important;
+  font-size: 1em !important;
+  line-height: 1.6 !important;
+  padding: 10px 30px 30px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(42, 128, 103);
+}
+
+.card-subtitle {
+  font-size: 1em;
+  font-weight: 600;
+  color: #C2C0D8;
+}
+
+.card-text {
+  padding: 10px;
+  text-align: left;
+}
+
+.btn-pf {
+  background: rgb(42, 128, 103)!important;
+  border: none !important;
+  width: 100%;
+}
+
+.btn-pf:hover {
+  background: #362A7F!important;
+  color: #C2C0D8 !important;
+}
+
+#cnr-footer {
+  background: #362A7F;
+  width: 100vw;
+  padding: 20px;
+}
+
+.btn-footer {
+  padding: 10px;
+  color: #ffffff;
+}
+
+.btn-footer:hover {
+  text-decoration: none;
+  color: #C2C0D8;
+}
+

@@ -1,11 +1,12 @@
-import React from 'react';
-import { Header } from '../components/Header';
+import React from 'react';  
 
 export const About = () => {
+    
     return (
-        <div>
-            <Header/>
-            about
-        </div>
+        <>
+            <div className="container">
+                <h1>Myr's portfolio</h1>
+            </div>    
+        </>
     )
 }

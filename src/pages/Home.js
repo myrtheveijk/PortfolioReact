@@ -1,46 +1,31 @@
 import React from 'react';
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
-import { Row, Col, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
-import CoverMobo from '../img/CoverMobo.jpeg';
+import { Row } from 'reactstrap';
+import { Button } from 'reactstrap';
+import { ProjectCard } from '../components/ProjectCard';
+
 
 
 export const Home = () => {
     return (
       <>
         <div className="App">
-
-          <Header/>
-
           <header className="App-header">
-            <h1>Myrthe van Eijk</h1>
+            <h1>Myr's portfolio</h1>
             <div>
-              <a href="#portfolio" title="portfolio"><button className="btn btn-dark">Portfolio</button></a>
-              <a href="/about" title="about me"><button className="btn btn-success">About me</button></a>
+              <a href="#portfolio" title="portfolio"><Button className="btn-header">Check mijn portfolio</Button></a>
+              <a href="/about" title="about me"><Button className="btn-header" id="btn-about">Meer over Myrthe</Button></a>
             </div>
           </header>
 
           <section id="portfolio">
             <h2>Portfolio</h2>
-            <p>Projecten waaraan ik gewerkt heb...</p>
+            <h3>Van het ontwerpen en ontwikkelen van een website tot het maken van video's. In mijn portfolio is het te vinden. <br/>Zie hieronder aan welke projecten ik heb gewerkt.</h3>
             <div className="container">
                 <Row>
-                  <Col>
-                    <Card>
-                      <CardImg top width="100%" src={ CoverMobo } alt="Card image cap" />
-                      <CardBody>
-                        <CardTitle>Card title</CardTitle>
-                        <CardSubtitle>Card subtitle</CardSubtitle>
-                        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                        <Button>Button</Button>
-                      </CardBody>
-                    </Card>
-                  </Col>
+                    <ProjectCard />
                 </Row>
               </div>
           </section>
-
-          <Footer />
         </div>
       </>
     )

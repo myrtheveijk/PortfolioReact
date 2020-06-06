@@ -149,6 +149,22 @@ h3 {
 #pf-img {
   max-width: 100% !important;
   padding: 20px;
-
   display: block;
+}
+
+.col-contact {
+  max-width: 600px !important;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+}
+
+.btn-contact {
+  background: #362A7F !important;
+  border: none !important;
+}
+
+.btn-contact:hover {
+  background: rgb(42, 128, 103) !important;
+  transition: all 0.3;
+  border: none !important;
 }

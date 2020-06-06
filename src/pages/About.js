@@ -13,6 +13,9 @@ export const About = () => {
             <Container>
                 <Row>
                     <Col className="col-about">
+                        <img src={Profielfoto} id="pf-img" alt="Profielfoto"/>
+                    </Col>
+                    <Col className="col-about">
                         <h2>Howdy!</h2>
                         <p>
                             Ik ben Myrthe, 21 jaar en kom uit Monster. In mijn vrije tijd spreek ik 
@@ -36,9 +39,6 @@ export const About = () => {
                         </p>
                         <p>Wil je meer over mij weten?</p>
                         <a href="/contact" className="btn-link" title="Contact">Stuur mij dan een bericht!</a>
-                    </Col>
-                    <Col className="col-about">
-                        <img src={Profielfoto} id="pf-img" alt="Profielfoto"/>
                     </Col>
                 </Row>
             </Container>

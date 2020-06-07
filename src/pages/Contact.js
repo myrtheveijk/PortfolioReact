@@ -11,7 +11,7 @@ export const Contact = () => {
 
             <Container>
                     <div className="col-contact">
-                        <Form>
+                        <Form action="/" method="_POST">
                             <Form.Group>
                                 <Form.Label>Naam *</Form.Label>
                                 <Form.Control type="text" placeholder="Jouw naam..." required="true" />

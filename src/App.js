@@ -10,15 +10,19 @@ import { Contact } from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
+
+      <Router>
         <Switch>
           <Route exact path="/" component={ Home } />
           <Route path="/about" component={ About } />
           <Route path="/contact" component={ Contact } />
         </Switch>
+      </Router>
+
       <Footer />
-    </Router>
+    </>
   );
 }
 

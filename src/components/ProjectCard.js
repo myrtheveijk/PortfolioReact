@@ -34,12 +34,12 @@ export const ProjectCard = () => {
         <>
             <Col md={4}>
                 <Card>
-                    <CardImg top width="30%" src= {ProjectData.img} alt="" />
+                    <CardImg top width="30%" src={ProjectData.img} alt={ProjectData.title} />
                     <CardBody>
                         <CardTitle>{ProjectData.title}</CardTitle>
                         <CardSubtitle>{ProjectData.subtitle}</CardSubtitle>
                         <CardText>{ProjectData.text}</CardText>
-                        <a href= {ProjectData.link} target="_blank"><Button className="btn-pf">Bekijk project</Button></a>
+                        <a href= {ProjectData.link} title={ProjectData.title} target="_blank"><Button className="btn-pf">Bekijk project</Button></a>
                     </CardBody>
                 </Card>
             </Col>
